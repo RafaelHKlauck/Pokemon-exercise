@@ -1,0 +1,120 @@
+body {
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.paragraph {
+  margin-top: 7px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.allTypes {
+  margin-top: 7px;
+  margin-left: 5px;
+  font-size: 25px;
+}
+
+.pokemonTypesList {
+  margin-top: 7px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.pokemonTypesList:hover {
+  color: blue;
+}
+
+.pokeList {
+  display: flex;
+  /* Informações em linhas separadas */
+  flex-wrap: wrap;
+  /* Textos na mesma linha */
+  align-items: baseline;
+}
+
+.pokemonNamesList {
+  margin-top: 15px;
+  margin-left: 5px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokeImg {
+  width: 200px;
+}
+
+.back {
+  font-size: 15px;
+  background-color: red;
+  color: white;
+}
+
+.modal-outer {
+  display: grid;
+  background: hsla(50, 100%, 50%, 0.7);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  /* Hide this modal until we need it */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.modal-outer img {
+  width: 100%;
+}
+
+.modal-outer.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-inner {
+  max-width: 600px;
+  min-width: 400px;
+  padding: 2rem;
+  border-radius: 5px;
+  min-height: 200px;
+  background: black;
+  transform: translateY(-200%);
+  transition: transform 2s;
+  display: flex;
+}
+.modal-inner img {
+  width: 200px;
+}
+
+.nameImg {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+}
+.habNames {
+  font-size: 25px;
+}
+.buttons {
+  font-size: 20px;
+  margin-top: 7px;
+}
+.buttons:hover {
+  color: blue;
+}
+
+.modal-outer.open .modal-inner {
+  transform: translateY(0);
+}
+
+.backToAb {
+  font-size: 15px;
+  background-color: red;
+  color: white;
+}
